@@ -1,0 +1,19 @@
+
+/*comiensa estilos aside*/
+
+	aside {
+		background-color: $secondaryColor;
+			ul li {
+				list-style: none;
+					a {
+						text-decoration: none;
+							&:hover {
+								color: black;
+								font-weight: 600;
+								cursor: pointer;
+							}
+					}
+			}
+	}
+
+/*termina estilos aside*/

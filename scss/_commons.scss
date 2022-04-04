@@ -1,0 +1,56 @@
+/*estilos generales*/
+
+//mixing
+
+@mixin text-parrafo ($font-size, $color, $text-align){
+	font-size: $font-size;
+	color: $color;
+	text-align: $text-align;
+	padding: 2px;
+}
+
+@mixin link ($text-decoration, $color){
+	text-decoration: $text-decoration;
+	color: $color;
+}
+
+	* {
+	padding: 0;
+	margin: 0;	
+	overflow-x: hidden;		
+	box-sizing: border-box;
+	
+	}
+
+	a {
+		@include link (none,black);
+		&:hover {
+			font-weight: 600;
+		}
+	}
+
+	p {
+		@include text-parrafo (1rem,black,justify);
+	}
+
+$paleta: (
+	'uno':rgba(241,182,218,.5),
+	'dos':rgba(170,102,204,.5),
+	'tres':rgba(231,235,238,1),
+	'cuatro':rgba(96,189,175,.3),
+	'cinco':rgba(155,255,205,.3),
+	);
+
+
+//colores
+$mainColor:map-get($map:$paleta,$key:'uno');
+$secondaryColor:map-get($map:$paleta,$key:'dos');
+
+
+
+
+
+
+
+
+	

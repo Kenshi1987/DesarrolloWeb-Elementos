@@ -1,0 +1,171 @@
+/*estilos generales*/
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    font-weight: 600; }
+
+p {
+  font-size: 1rem;
+  color: black;
+  text-align: justify;
+  padding: 2px; }
+
+/*estilo textos*/
+h1, h2, h3 {
+  font-family: "Acme", sans-serif;
+  overflow: hidden; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1rem;
+  overflow: hidden; }
+
+.contenido_md {
+  font-size: 1.5rem; }
+
+/*fin estilos textos*/
+/* incio estilo nav propia*/
+nav ul {
+  margin-top: 40px; }
+
+.bg-colorNav {
+  background-color: rgba(241, 182, 218, 0.5); }
+
+.logo {
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 5px; }
+
+/*end estilo nav propia*/
+@media only screen and (min-width: 1024px) {
+  .logo {
+    width: 250px; }
+  nav ul {
+    font-size: 1.5rem;
+    margin-top: 80px; } }
+
+main {
+  background-color: #e7ebee; }
+
+/*comienza estilo cards*/
+.my_card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  z-index: 100;
+  height: 500px;
+  text-align: center; }
+  .my_card:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.8);
+    z-index: 100; }
+
+.card_img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; }
+
+.botton, .botton_2 {
+  botton: 10px;
+  width: 100%;
+  border: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-color: rgba(96, 189, 175, 0.3);
+  font-family: "Acme", sans-serif; }
+  .botton:hover, .botton_2:hover {
+    font-weight: 600;
+    background-color: rgba(155, 255, 205, 0.3); }
+
+.botton_2 {
+  background-color: rgba(155, 255, 205, 0.3); }
+  .botton_2:hover {
+    background-color: rgba(96, 189, 175, 0.3); }
+
+/*termina estilo cards*/
+/*inicio estilos form y maps*/
+form {
+  background-color: rgba(196, 196, 196, 0.5);
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 200; }
+  form label {
+    display: block;
+    margin: 5px 0; }
+    form label input {
+      margin: 5px;
+      text-align: center;
+      width: 80%;
+      font-size: 1rem; }
+
+.text_area {
+  width: 80%;
+  height: 300px; }
+
+.boton {
+  width: 80px; }
+
+form ::placeholder {
+  font-size: .8rem;
+  text-align: center; }
+
+form .text_area::placeholder {
+  line-height: 200px; }
+
+.maps {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  border: none; }
+
+/*end estilos form y maps*/
+@media only screen and (min-width: 1024px) {
+  form {
+    width: 70%; }
+  .maps {
+    width: 50%; } }
+
+/*comiensa estilos aside*/
+aside {
+  background-color: rgba(170, 102, 204, 0.5); }
+  aside ul li {
+    list-style: none; }
+    aside ul li a {
+      text-decoration: none; }
+      aside ul li a:hover {
+        color: black;
+        font-weight: 600;
+        cursor: pointer; }
+
+/*termina estilos aside*/
+/*comienza estilos footer*/
+footer {
+  background-color: rgba(241, 182, 218, 0.5); }
+  footer a img {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px; }
+
+/*termina estilo footer*/
