@@ -13,6 +13,9 @@
 	text-decoration: $text-decoration;
 	color: $color;
 }
+	html{
+		scroll-behavior: smooth;
+	}
 
 	* {
 	padding: 0;
@@ -39,6 +42,8 @@ $paleta: (
 	'tres':rgba(231,235,238,1),
 	'cuatro':rgba(96,189,175,.3),
 	'cinco':rgba(155,255,205,.3),
+	'seis':rgba(69,179,157,1),
+	'siete':rgba(243,156,18,1),
 	);
 
 

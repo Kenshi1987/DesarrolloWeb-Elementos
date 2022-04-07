@@ -40,23 +40,125 @@ main {
 		justify-content: center;
 		align-items: center;
 		padding: 4px;		
-		background-color: map-get($map:$paleta,$key:'cuatro');
+		background-color: map-get($map:$paleta,$key:'seis');
 		font-family: $fontTitles;
 			&:hover {
 				font-weight: 600;
-				background-color: map-get($map:$paleta,$key:'cinco');
+				background-color: map-get($map:$paleta,$key:'siete');
 			}
 	}
 
 	.botton_2 {
 		@extend .botton;
-			background-color: map-get($map:$paleta,$key:'cinco');
+			background-color: map-get($map:$paleta,$key:'siete');
 			&:hover {
-			background-color: map-get($map:$paleta,$key:'cuatro');
+			background-color: map-get($map:$paleta,$key:'seis');
 		}
 	}
 
 /*termina estilo cards*/
+
+/*estilo mkt home*/
+	
+	.index section{
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0 30px;
+		align-items: center;
+		overflow: hidden;
+			a{
+				display: inline-block;
+				color: black;
+				text-decoration: none;
+				width: 100px;
+				height: 40px;
+				text-align: center;
+				border: 1px solid white;
+				border-radius: 50px;
+				background-color: #fff;
+				overflow: hidden;
+			}			
+	}
+
+	.boxImagenIndex{		
+				height: 80%;
+				width: auto;
+				object-fit: cover;
+				margin: 5px;
+				padding: 5px;
+				border-radius:50px;
+				opacity: .8;
+			}
+	
+	.contenedor-texto{
+		width: 50%;
+		padding:5px;
+		text-align: center;
+			p{
+				text-align: center;
+				font-size: 1.5rem;
+			}
+	}
+	
+
+	.index section:nth-child(2){
+		background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	}
+
+	.index section:nth-child(3){
+		background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+	}
+
+	.index section:nth-child(4){
+		background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);		
+	}
+
+	.index section:nth-child(5){
+		background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	}
+
+	.index section:nth-child(6){
+		background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+	}
+
+	@media screen and(max-width: 768px) {
+		.index section{
+			flex-direction: column;
+			height: 100vh;
+			overflow: hidden;
+		}
+		.contenedor-texto{
+			width: 80%;
+			height: auto;
+			overflow: hidden;
+				p{
+				font-size: 1rem;
+			}
+		}
+
+		.boxImagenIndex{
+				height: auto;
+				width: 100%;
+				margin: 0;
+				padding:0;
+				border-radius: 30px;
+			}
+	}
+
+
+
+
+		
+	
+
+	
+
+
+
+
+	
 
 
 
