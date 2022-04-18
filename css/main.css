@@ -71,7 +71,7 @@ main {
   overflow: hidden;
   transition: all 0.5s;
   box-sizing: border-box;
-  z-index: 100;
+  z-index: 10;
   height: 500px;
   text-align: center; }
   .my_card:hover {
@@ -163,17 +163,24 @@ main {
     height: 100vh;
     overflow: hidden; }
   .contenedor-texto {
-    width: 80%;
+    width: 100%;
     height: auto;
     overflow: hidden; }
     .contenedor-texto p {
       font-size: 1rem; }
   .boxImagenIndex {
-    height: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-radius: 30px; } }
+    height: 80%;
+    width: auto;
+    margin: 2px;
+    padding: 2px; } }
+
+@media screen and (max-width: 425px) {
+  .boxImagenIndex {
+    height: 60%;
+    width: 99vw;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 20px; } }
 
 /*inicio estilos form y maps*/
 form {
@@ -220,19 +227,19 @@ form .text_area::placeholder {
   .maps {
     width: 50%; } }
 
-/*comiensa estilos aside*/
-aside {
+/*comiensa estilos info*/
+.info {
   background-color: rgba(170, 102, 204, 0.5); }
-  aside ul li {
+  .info ul li {
     list-style: none; }
-    aside ul li a {
+    .info ul li a {
       text-decoration: none; }
-      aside ul li a:hover {
+      .info ul li a:hover {
         color: black;
         font-weight: 600;
         cursor: pointer; }
 
-/*termina estilos aside*/
+/*termina estilos info*/
 /*comienza estilos footer*/
 footer {
   background-color: rgba(241, 182, 218, 0.5); }

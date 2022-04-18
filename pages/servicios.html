@@ -91,85 +91,221 @@
 		</header>
 		<!--termina header-->
 
-			<!--comienza main-->
-			<main class="py-3 bgMainServicios">
-				<div class="container-fluid">
-					<h1 class="text-center p-2 fw-bold">Nuestros Servicios</h1>
-					<div class="row row m-1 g-0 justify-content-around">
+		<!--comienza main-->
+		<main class="py-3 bgMainServicios">
+			<div class="container-fluid">
+				<h1 class="text-center p-2 fw-bold">Nuestros Servicios</h1>
+				<div class="row row m-1 g-0 justify-content-around">
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Elemento Agua</h3>
-							<img src="./../img/agua.jpg" alt="Foto de Hidromasajes" class="card_img">
-							<p class="p-2 pt-4 text-center">Vive el verdadero significado del spa, gracias al Circuito Hídrico donde pasarás por 5 estaciones diferentes que estimularán todos tus sentidos.</p>
-							<button class="botton_2 position-absolute bottom-0 end-0 mb-3">Mas info!</button>							
-						</article>
+					<!--card-->
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Elemento Agua</h3>
+						<img src="./../img/agua.jpg" alt="Foto de Hidromasajes" class="card_img">
+						<p class="p-2 pt-4 text-center">Vive el verdadero significado del spa, gracias al Circuito Hídrico donde pasarás por 5 estaciones diferentes que estimularán todos tus sentidos.</p>
+						<button class="botton_2 position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalAgua" data-bs-backdrop="static">Mas info!</button>							
+					</article>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Elemento Fuego</h3>
-							<img src="./../img/fuego.jpg" alt="Foto de Saunas" class="card_img">
-							<p class="p-2 pt-4 text-center">Senti la experiencia Detox desde adentro, en este recorrido de diferentes Saunas.</p>
-							<button class="botton_2 position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<!--comienza modal-->
+					<div class="modal fade" id="modalAgua" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalAgua" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalAgua">Elemento Agua</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Nuestro Elemento Agua, consta de 3 Circuitos hídricos consecutivos. <br><br>El primero tiene una duración de 25 minutos en las duchas Escosesas, donde vas a poder disfrutar de 10 jets direccionales y potentes en todo tu cuerpo, mezclando agua fria y caliente. <br><br>El Segundo es una sesion de hidromasaje de 25 minutos con distintas intensidades, trabajando de manera localizada cuello, espalda y piernas. <br><br>Por último, 25 minutos de pileta climatizada a distintas temperaturas para que el relax corporal sea completo. Se puede incluir sesion de masaje al finalizar el circuito, y terminar con alguna infusión relajante. <br><br>Duración Aprox. 90 minutos.</p>							
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Elemento Tierra</h3>
-							<img src="./../img/tierra.jpg" alt="Foto de Persona con Piedras Calientes" class="card_img">
-							<p class="p-2 pt-4 text-center">Masaje con Piedras Calientes para facilitar que fluya la energía vital y aliviar asi trastornos físicos y emocionales.</p>
-							<button class="botton_2 position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<!--card-->
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Elemento Fuego</h3>
+						<img src="./../img/fuego.jpg" alt="Foto de Saunas" class="card_img">
+						<p class="p-2 pt-4 text-center">Senti la experiencia Detox desde adentro, en este recorrido de diferentes Saunas.</p>
+						<button class="botton_2 position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalFuego" data-bs-backdrop="static">Mas info!</button>	
+					</article>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Elemento Aire</h3>
-							<img src="./../img/aire.jpg" alt="Foto de Persona con masajes y Velas" class="card_img">
-							<p class="p-2 pt-4 text-center">Sesion de masajes corporales, acompañados de suaves aromas y aceites para relajar la mente.</p>
-							<button class="botton_2 position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<!--comienza modal-->
+					<div class="modal fade" id="modalFuego" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalFuego" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalFuego">Elemento Fuego</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Nuestro Elemento Fuego, consta de 2 Sesiones de Sauna consecutivos. <br><br>El primero tiene una duración de 30 minutos en un Sauna Húmedo, donde vas a sentir como tu cuerpo se desintoxica desde adentro al largar todas la impurezas por los poros.<br><br>El Segundo es una sesion de Sauna Seco de 30 minutos con distintas intensidades, donde podras sentir como tu cuerpo se relaja con el calor de la habitación<br><br>Por último, se finaliza con una rutina de masajes de 15 minutos, y un refresco natural hidratante. <br><br>Duración Aprox. 75 minutos.</p>							
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Reflexologia</h3>
-							<img src="./../img/reflexologia.jpg" alt="Foto de Persona haciendo Masajes en los pies" class="card_img">
-							<p class="p-2 pt-4 text-center">Terapia manual que estimula áreas reflejas de los pies produciendo sensación de alivio y favoreciendo distintos órganos del cuerpo.</p>
-							<button class="botton_2 position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<!--card-->
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Elemento Tierra</h3>
+						<img src="./../img/tierra.jpg" alt="Foto de Persona con Piedras Calientes" class="card_img">
+						<p class="p-2 pt-4 text-center">Masaje con Piedras Calientes para facilitar que fluya la energía vital y aliviar asi trastornos físicos y emocionales.</p>
+						<button class="botton_2 position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalTierra" data-bs-backdrop="static">Mas info!</button>	
+					</article>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Dia de Spa</h3>
-							<img src="./../img/spa.jpg" alt="Dos persona en Spa" class="card_img">
-							<p class="p-2 pt-4 text-center">Compartí y disfrutá una experiencia especial combinando cada uno de nuestros <b>ELEMENTOS</b></p>
-							<button class="botton_2 position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<!--comienza modal-->
+					<div class="modal fade" id="modalTierra" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalTierra" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalFuego">Elemento Tierra</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Nuestro Elemento Tierra, consta de 2 Sesiones de Masajes Especiales.<br><br>El primero tiene una duración de 30 minutos, y consta de un masaje con piedras volcanicas calientes, especialmente colocadas en los puntos vitales del cuerpo, para eliminar todas las impurezas del mismo, y armonizar todos nuestros chackras.<br><br>El Segundo es una sesion de Masajes, pero previo a aplicar un baño de barro corporal, el cual va a dejar tu cuerpo relajado y tu piel super nutrida y elastica. El mismo dura 30 minutos, y se finaliza con una ducha escocesa de 15 minutos, y una infusion herbal de té.<br><br>Duración Aprox. 75 minutos.</p>							
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>
+
+					<!--card-->
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Elemento Aire</h3>
+						<img src="./../img/aire.jpg" alt="Foto de Persona con masajes y Velas" class="card_img">
+						<p class="p-2 pt-4 text-center">Sesion de masajes corporales, acompañados de suaves aromas y aceites para relajar la mente.</p>
+						<button class="botton_2 position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalAire" data-bs-backdrop="static">Mas info!</button>	
+					</article>
+
+					<!--comienza modal-->
+					<div class="modal fade" id="modalAire" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalAire" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalAire">Elemento Aire</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Nuestro Elemento Aire, consta de 2 Sesiones de Masajes Especiales.<br><br>El primero tiene una duración de 30 minutos, y consta de un masaje con aceites naturales en todo el cuerpo, focalizando en espalda, brazos, cuello y piernas.<br><br>El Segundo es una sesion de Limpieza Facial Profunda, con aparatos de última tecnología, punta de diamantes y radiofrecuencia. Al finalizar se aplica una máscara descongestiva a base de te verde, caléndula y malva. Incluye infusión de té relajante.<br><br>Duración Aprox. 60 minutos.</p>							
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>
+
+					<!--card-->
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Reflexologia</h3>
+						<img src="./../img/reflexologia.jpg" alt="Foto de Persona haciendo Masajes en los pies" class="card_img">
+						<p class="p-2 pt-4 text-center">Terapia manual que estimula áreas reflejas de los pies produciendo sensación de alivio y favoreciendo distintos órganos del cuerpo.</p>
+						<button class="botton_2 position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalReflexologia" data-bs-backdrop="static">Mas info!</button>	
+					</article>
+
+					<!--comienza modal-->
+					<div class="modal fade" id="modalReflexologia" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalReflexologia" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalReflexologia">Reflexología</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Sesión exclusiva de masajes localizados y especiales en el área del pie. Trabajamos puntualmente en el malestar que lo aqueja, ubicando dicho dolor en la planta del pie, y trabajando sobre el mismo con presion, calor y aceites.<br><br>Duración Aprox. 40 minutos.</p>							
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>
+
+					<!--card-->
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Dia de Spa</h3>
+						<img src="./../img/spa.jpg" alt="Dos persona en Spa" class="card_img">
+						<p class="p-2 pt-4 text-center">Compartí y disfrutá una experiencia especial combinando cada uno de nuestros <b>ELEMENTOS</b></p>
+						<button class="botton_2 position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalSpa" data-bs-backdrop="static">Mas info!</button>	
+					</article>
+
+					<!--comienza modal-->
+					<div class="modal fade" id="modalSpa" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalSpa" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalSpa">Día de Spa Completo</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Nuestro Pack Exclusivo y Completo, incluye todo lo mejor de nuestros Elementos. <br><br>
+										Empezamos con una sesión completa de hidroterapia con Ducha Escocesa e Hidromasaje, de 40 minutos. <br>
+									Continuamos con una sesion de Sauna Húmedo de 30 minutos. <br>Incluimos una sesión de Masajes Especiales con Piedras Calientes y Aceites Esenciales de 30 minutos. <br>Finalizamos con una limpieza facial y masajes en los pies. <br><br>Todo acompañados de velas y sahumerios relajantes, y un ambiente totalmente acojedor y placentero, donde podras disfrutar de distintas infusiones y bebidas hidratantes. <br><br>Duración Aprox. 2 hs.</p>							
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>
 						
-					</div><!--cierra row-->
-				</div><!--cierra conteiner-fluid-->
-			</main>
-			<!--termina main-->			
+				</div><!--cierra row-->
+			</div><!--cierra conteiner-fluid-->
+		</main>
+		<!--termina main-->			
 
-					<!--inicia aside-->
-					<aside class="container-fluid">
-						<h2 class="text-center fw-bold pt-2">Links de Interes</h2>
-							<ul class="d-flex flex-wrap justify-content-center">
-								<li class="m-1"><a href="https://es.wikipedia.org/wiki/Aromaterapia" rel="nofollow" target="_blank">Beneficios de la Aromaterapia.</a></li>
-								<li class="m-1"><a href="https://es.wikipedia.org/wiki/Hidroterapia" rel="nofollow" target="_blank">¿Qué es la Hidroterapia?</a></li>
-								<li class="m-1"><a href="https://es.wikipedia.org/wiki/Reflexolog%C3%ADa" rel="nofollow" target="_blank">¿Qué es la Reflexologia?</a></li>
-								<li class="m-1"><a href="https://significadodelaspiedras.com/energeticas/" rel="nofollow" target="_blank">Las Energias de las piedras.</a></li>
-								<li class="m-1"><a href="https://www.primeraedicion.com.ar/nota/100078975/sauna-humedo-y-seco/" rel="nofollow" target="_blank">¿Sauna Seco o Húmedo?</a></li>
-								<li class="m-1"><a href="https://es.wikipedia.org/wiki/Ducha_alternante_de_agua_caliente_y_fr%C3%ADa" rel="nofollow" target="_blank">Como tomar una ducha Escocesa</a></li>
-								<li class="m-1"><a href="https://www.clarin.com/astrologia/hierbas-limpiar-hogar-energias-negativas_0_HycDjm8Y.html" rel="nofollow" target="_blank">Hierbas para Defumar.</a></li>
+			<!--inicia section-->
+			<section class="container-fluid info">
+				<h2 class="text-center fw-bold pt-2">Links de Interes</h2>
+					<ul class="d-flex flex-wrap justify-content-center">
+						<li class="m-1"><a href="https://es.wikipedia.org/wiki/Aromaterapia" rel="nofollow" target="_blank">Beneficios de la Aromaterapia.</a></li>
+						<li class="m-1"><a href="https://es.wikipedia.org/wiki/Hidroterapia" rel="nofollow" target="_blank">¿Qué es la Hidroterapia?</a></li>
+						<li class="m-1"><a href="https://es.wikipedia.org/wiki/Reflexolog%C3%ADa" rel="nofollow" target="_blank">¿Qué es la Reflexologia?</a></li>
+						<li class="m-1"><a href="https://significadodelaspiedras.com/energeticas/" rel="nofollow" target="_blank">Las Energias de las piedras.</a></li>
+						<li class="m-1"><a href="https://www.primeraedicion.com.ar/nota/100078975/sauna-humedo-y-seco/" rel="nofollow" target="_blank">¿Sauna Seco o Húmedo?</a></li>
+						<li class="m-1"><a href="https://es.wikipedia.org/wiki/Ducha_alternante_de_agua_caliente_y_fr%C3%ADa" rel="nofollow" target="_blank">Como tomar una ducha Escocesa</a></li>
+						<li class="m-1"><a href="https://www.clarin.com/astrologia/hierbas-limpiar-hogar-energias-negativas_0_HycDjm8Y.html" rel="nofollow" target="_blank">Hierbas para Defumar.</a></li>
 							</ul>
-					</aside>
-					<!--termina aside-->
+			</section>
+			<!--termina section-->
 
-					<!--inicia footer-->
-					<footer class="text-center pb-3">
-						<h3 class="fw-bold text-center pt-2">Seguinos en nuestras redes</h3>
-							<a href="https://facebook.com" target="_blank">
-								<img src="./../img/iconofacebook.png" alt="Icono Facebook"></a>
-							<a href="https://instagram.com" target="_blank">
-								<img src="./../img/iconoinstagram.png" alt="Icono Instagram"></a>
-							<a href="https://twitter.com" target="_blank">
-								<img src="./../img/iconotwitter.png" alt="Icono Twitter"></a>
-					</footer>				
-					<!--termina footer-->				
+		<!--inicia footer-->
+		<footer class="text-center pb-3">
+			<h3 class="fw-bold text-center pt-2">Seguinos en nuestras redes</h3>
+				<a href="https://facebook.com" target="_blank">
+					<img src="./../img/iconofacebook.png" alt="Icono Facebook"></a>
+				<a href="https://instagram.com" target="_blank">
+					<img src="./../img/iconoinstagram.png" alt="Icono Instagram"></a>
+				<a href="https://twitter.com" target="_blank">
+					<img src="./../img/iconotwitter.png" alt="Icono Twitter"></a>
+				<a href="https://api.whatsapp.com/send?phone=541156322591" target="_blank">
+					<img src="./../img/iconowhat.png" alt="Icono whatsapp"></a>
+		</footer>				
+		<!--termina footer-->				
 
 		<!--Script Aos-->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>

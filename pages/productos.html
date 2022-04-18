@@ -92,84 +92,309 @@
 		</header>
 		<!--termina header-->
 
-			<!--comienza main-->
-			<main class="py-3">
-				<div class="container-fluid">
-					<h1 class="text-center p-2 fw-bold">Nuestros Productos</h1>
-					<div class="row m-1 g-0 justify-content-around">
+		<!--comienza main-->
+		<main class="py-3">
+			<div class="container-fluid">
+				<h1 class="text-center p-2 fw-bold">Nuestros Productos</h1>
+				<div class="row m-1 g-0 justify-content-around">
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Aceites Esenciales</h3>
-							<img src="./../img/aceites.jpg" alt="Foto de Aceites Esenciales" class="card_img">
-							<p class="p-2 pt-4 text-center">Esencias Puras extraidas de manera natural. Calidad superior para multiples usos. </p>						
-							<button class="botton position-absolute bottom-0 end-0 mb-3">Mas info!</button>								
-						</article>
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Aceites Esenciales</h3>
+						<img src="./../img/aceites.jpg" alt="Foto de Aceites Esenciales" class="card_img">
+						<p class="p-2 pt-4 text-center">Esencias Puras extraidas de manera natural. Calidad superior para multiples usos. </p>						
+						<button class="botton position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalAceites" data-bs-backdrop="static">Mas info!</button>								
+					</article>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Sahumerios Artesanales</h3>
-							<img src="./../img/sahumerios.jpg" alt="Foto de Sahumerios Artesanales" class="card_img">
-							<p class="p-2 pt-4 text-center">Sahumerios Artesanales elaborados con materia prima orgánica y sin químicos.</p>
-							<button class="botton position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<div class="modal fade" id="modalAceites" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalAceites" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="titleModalAceites">Aceites Esenciales</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body text-center">
+									<p>Aceites Esenciales puros, sin químicos agregados, en presentaciones de 10 ml, 30 ml y 50 ml. Disfrute de todas estas fragancias para la armonía de su hogar y cuerpo.</p>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Sándalo</li>
+										<li class="list-group-item flex-fill">Lavanda</li>
+										<li class="list-group-item flex-fill">Incienso</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Rosa</li>
+										<li class="list-group-item flex-fill">Gardenia</li>
+										<li class="list-group-item flex-fill">Pachuli</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Canela</li>
+										<li class="list-group-item flex-fill">Limón</li>
+										<li class="list-group-item flex-fill">Eucaliptus</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Jazmín</li>
+										<li class="list-group-item flex-fill">Alcanfor</li>
+										<li class="list-group-item flex-fill">Frutilla</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Azahar</li>
+										<li class="list-group-item flex-fill">Naranja</li>
+										<li class="list-group-item flex-fill">Vainilla</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>
+									
+								</div>
+							</div>							
+						</div>						
+					</div>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Velas Perfumadas</h3>
-							<img src="./../img/velas.jpg" alt="Foto de Velas Perfumadas" class="card_img">
-							<p class="p-2 pt-4 text-center">Velas de Cera de Soja, 100% personalizables, ideales para el hogar o para eventos.</p>
-							<button class="botton position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Sahumerios Artesanales</h3>
+						<img src="./../img/sahumerios.jpg" alt="Foto de Sahumerios Artesanales" class="card_img">
+						<p class="p-2 pt-4 text-center">Sahumerios Artesanales elaborados con materia prima orgánica y sin químicos.</p>
+						<button class="botton position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalSahumerios" data-bs-backdrop="static">Mas info!</button>	
+					</article>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Carbones Activos</h3>
-							<img src="./../img/carbones.jpg" alt="Foto de Carbones para defumar" class="card_img">
-							<p class="p-2 pt-4 text-center">Carbones Eco-Artesanal. Ideal para renovar energias del hogar. </p>
-							<button class="botton position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<div class="modal fade" id="modalSahumerios" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalSAhumerios" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalSahumerios">Sahumerios Artesanales</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Sahumerios Artesanales con resinas y maderas naturales, amplia fragancias para que aromatices tu hogar y vivas momentos únicos. Presentación de 50 y 100 unidades.</p>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Sándalo</li>
+										<li class="list-group-item flex-fill">Lavanda</li>
+										<li class="list-group-item flex-fill">Incienso</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Rosa</li>
+										<li class="list-group-item flex-fill">Gardenia</li>
+										<li class="list-group-item flex-fill">Pachuli</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Canela</li>
+										<li class="list-group-item flex-fill">Limón</li>
+										<li class="list-group-item flex-fill">Eucaliptus</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Jazmín</li>
+										<li class="list-group-item flex-fill">Alcanfor</li>
+										<li class="list-group-item flex-fill">Frutilla</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Azahar</li>
+										<li class="list-group-item flex-fill">Naranja</li>
+										<li class="list-group-item flex-fill">Vainilla</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>
+									
+								</div>
+							</div>							
+						</div>						
+					</div>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Hierbas de Defumacion</h3>
-							<img src="./../img/hierbas.png" alt="Foto de Hierbas de Defumacion" class="card_img">
-							<p class="p-2 pt-4 text-center">Hierbas y Recinas puras. Abren el espacio, generan un estado ampliado de conciencia</p>
-							<button class="botton position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Velas Perfumadas</h3>
+						<img src="./../img/velas.jpg" alt="Foto de Velas Perfumadas" class="card_img">
+						<p class="p-2 pt-4 text-center">Velas de Cera de Soja, 100% personalizables, ideales para el hogar o para eventos.</p>
+						<button class="botton position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalVelas" data-bs-backdrop="static">Mas info!</button>	
+					</article>
 
-						<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
-							<h3 class="text-center p-2 pt-4 fw-bold">Kit Completo</h3>
-							<img src="./../img/kit.jpg" alt="Foto de Kit de Defumacion Completo" class="card_img">
-							<p class="p-2 pt-4 text-center">Aprovecha nuestros Kits armados y Exclusivos!</p>
-							<button class="botton position-absolute bottom-0 end-0 mb-3">Mas info!</button>	
-						</article>						
-					</div><!--cierra row-->
-				</div><!--cierra conteiner-fluid-->
-			</main>
-			<!--termina main-->			
+					<div class="modal fade" id="modalVelas" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalVelas" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalVelas">Velas Perfumadas</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Velas Perfumadas de Cera de Soja, sin químicos ni aditivos de orígen animal. Presentación en pack de 2, 5 o 10 unidades. Duración aproximada de 24hs, y amplia variedad de fragancias. </p>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Sándalo</li>
+										<li class="list-group-item flex-fill">Lavanda</li>
+										<li class="list-group-item flex-fill">Incienso</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Rosa</li>
+										<li class="list-group-item flex-fill">Gardenia</li>
+										<li class="list-group-item flex-fill">Pachuli</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Canela</li>
+										<li class="list-group-item flex-fill">Limón</li>
+										<li class="list-group-item flex-fill">Eucaliptus</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Jazmín</li>
+										<li class="list-group-item flex-fill">Alcanfor</li>
+										<li class="list-group-item flex-fill">Frutilla</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Azahar</li>
+										<li class="list-group-item flex-fill">Naranja</li>
+										<li class="list-group-item flex-fill">Vainilla</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>
+									
+								</div>
+							</div>							
+						</div>						
+					</div>
 
-					<!--inicia aside-->
-					<aside class="container-fluid">
-						<h2 class="text-center fw-bold pt-2">Links de Interes</h2>
-							<ul class="d-flex flex-wrap justify-content-center">
-								<li class="m-1"><a href="https://es.wikipedia.org/wiki/Aromaterapia" rel="nofollow" target="_blank">Beneficios de la Aromaterapia.</a></li>
-								<li class="m-1"><a href="https://es.wikipedia.org/wiki/Hidroterapia" rel="nofollow" target="_blank">¿Qué es la Hidroterapia?</a></li>
-								<li class="m-1"><a href="https://es.wikipedia.org/wiki/Reflexolog%C3%ADa" rel="nofollow" target="_blank">¿Qué es la Reflexologia?</a></li>
-								<li class="m-1"><a href="https://significadodelaspiedras.com/energeticas/" rel="nofollow" target="_blank">Las Energias de las piedras.</a></li>
-								<li class="m-1"><a href="https://www.primeraedicion.com.ar/nota/100078975/sauna-humedo-y-seco/" rel="nofollow" target="_blank">¿Sauna Seco o Húmedo?</a></li>
-								<li class="m-1"><a href="https://es.wikipedia.org/wiki/Ducha_alternante_de_agua_caliente_y_fr%C3%ADa" rel="nofollow" target="_blank">Como tomar una ducha Escocesa</a></li>
-								<li class="m-1"><a href="https://www.clarin.com/astrologia/hierbas-limpiar-hogar-energias-negativas_0_HycDjm8Y.html" rel="nofollow" target="_blank">Hierbas para Defumar.</a></li>
-							</ul>
-					</aside>
-					<!--termina aside-->
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Carbones Activos</h3>
+						<img src="./../img/carbones.jpg" alt="Foto de Carbones para defumar" class="card_img">
+						<p class="p-2 pt-4 text-center">Carbones Eco-Artesanal. Ideal para renovar energias del hogar. </p>
+						<button class="botton position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalCarbones" data-bs-backdrop="static">Mas info!</button>	
+					</article>
 
-					<!--inicia footer-->
-					<footer class="text-center pb-3">
-						<h3 class="fw-bold text-center pt-2">Seguinos en nuestras redes</h3>
-							<a href="https://facebook.com" target="_blank">
-								<img src="./../img/iconofacebook.png" alt="Icono Facebook"></a>
-							<a href="https://instagram.com" target="_blank">
-								<img src="./../img/iconoinstagram.png" alt="Icono Instagram"></a>
-							<a href="https://twitter.com" target="_blank">
-								<img src="./../img/iconotwitter.png" alt="Icono Twitter"></a>
-					</footer>				
-					<!--termina footer-->				
+					<div class="modal fade" id="modalCarbones" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalCarbones" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalCarbones">Carbones Activos</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Carbones Activados para sahumear tu hogar, listos para usar. Elegí tus hierbas y piedras energéticas, colocalas sobre el carbon, encendelo, y libera el humo protector y purificador en todo tu hogar. Viene en presentaciones de 20, 50 o 100 unidades de acuerdo a tu necesidad. Consulta por sahumeadores de barro y metal!</p>									
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>
+
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Hierbas de Defumación</h3>
+						<img src="./../img/hierbas.png" alt="Foto de Hierbas de Defumacion" class="card_img">
+						<p class="p-2 pt-4 text-center">Hierbas y Recinas puras. Abren el espacio, generan un estado ampliado de conciencia</p>
+						<button class="botton position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalHierbas" data-bs-backdrop="static">Mas info!</button>	
+					</article>
+
+					<div class="modal fade" id="modalHierbas" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalHierbas" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalHierbas">Hierbas de Defumación</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Hierbas y Piedras especiales para defumación y purificación de las energías de tu hogar. Limpian toda energía negativa, y atrae todo lo positivo a tu vida. Muchas opciones para sahumear! </p>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Sándalo</li>
+										<li class="list-group-item flex-fill">Lavanda</li>
+										<li class="list-group-item flex-fill">Incienso</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Almizcle</li>
+										<li class="list-group-item flex-fill">Mirra</li>
+										<li class="list-group-item flex-fill">Benjui</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Sangre de Drago</li>
+										<li class="list-group-item flex-fill">Pimienta</li>
+										<li class="list-group-item flex-fill">Laurel</li>
+									</ul>
+									<ul class="list-group list-group-horizontal">
+  										<li class="list-group-item flex-fill">Romero</li>
+										<li class="list-group-item flex-fill">Palo Santo</li>
+										<li class="list-group-item flex-fill">Ruda</li>
+									</ul>									
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>
+
+					<article data-aos="fade-left" data-aos-duration="3000" class="my_card col-sm-8 col-md-5 col-lg-3 m-2 position-relative">
+						<h3 class="text-center p-2 pt-4 fw-bold">Kit Completo</h3>
+						<img src="./../img/kit.jpg" alt="Foto de Kit de Defumacion Completo" class="card_img">
+						<p class="p-2 pt-4 text-center">Aprovecha nuestros Kits armados y Exclusivos!</p>
+						<button class="botton position-absolute bottom-0 end-0 mb-3" data-bs-toggle="modal" data-bs-target="#modalKit" data-bs-backdrop="static">Mas info!</button>	
+					</article>
+
+					<div class="modal fade" id="modalKit" tabindex="-1" aria-hidden="true" aria-labelledby="titleModalKit" data-bs-backdrop="static" data-bs-keyboard="false">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-center" id="titleModalCarbones">Kits de Limpieza Energética</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>							
+								</div>
+								<div class="modal-body">
+									<p>Si querés hacer una limpieza profunda de tu hogar, tu cuerpo, mente y alma, no dejes de aprovechar nuestros Kit Especiales ya armados. Los mismos incluyen: 2 Aceites Esenciales (Uno de protección y otro de apertura). 2 Velas Perfumadas a Elección. 50 Sahumerios Surtidos. Mix de Hierbas para Sahumear. Pack de 10 Carbones activados. Ideal para regalar o regalarse, y renovar las energias de tu hogar!</p>									
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+									
+									<a href="./../pages/404.html">
+										<button type="button" class="btn btn-outline-success">Comprar</button>
+									</a>									
+								</div>
+							</div>							
+						</div>						
+					</div>						
+				</div><!--cierra row-->
+			</div><!--cierra conteiner-fluid-->
+		</main>
+		<!--termina main-->			
+
+				<!--inicia section-->
+				<section class="container-fluid info">
+					<h2 class="text-center fw-bold pt-2">Links de Interes</h2>
+						<ul class="d-flex flex-wrap justify-content-center">
+							<li class="m-1"><a href="https://es.wikipedia.org/wiki/Aromaterapia" rel="nofollow" target="_blank">Beneficios de la Aromaterapia.</a></li>
+							<li class="m-1"><a href="https://es.wikipedia.org/wiki/Hidroterapia" rel="nofollow" target="_blank">¿Qué es la Hidroterapia?</a></li>
+							<li class="m-1"><a href="https://es.wikipedia.org/wiki/Reflexolog%C3%ADa" rel="nofollow" target="_blank">¿Qué es la Reflexologia?</a></li>
+							<li class="m-1"><a href="https://significadodelaspiedras.com/energeticas/" rel="nofollow" target="_blank">Las Energias de las piedras.</a></li>
+							<li class="m-1"><a href="https://www.primeraedicion.com.ar/nota/100078975/sauna-humedo-y-seco/" rel="nofollow" target="_blank">¿Sauna Seco o Húmedo?</a></li>
+							<li class="m-1"><a href="https://es.wikipedia.org/wiki/Ducha_alternante_de_agua_caliente_y_fr%C3%ADa" rel="nofollow" target="_blank">Como tomar una ducha Escocesa</a></li>
+							<li class="m-1"><a href="https://www.clarin.com/astrologia/hierbas-limpiar-hogar-energias-negativas_0_HycDjm8Y.html" rel="nofollow" target="_blank">Hierbas para Defumar.</a></li>
+						</ul>
+				</section>
+				<!--termina section-->
+
+		<!--inicia footer-->
+		<footer class="text-center pb-3">
+			<h3 class="fw-bold text-center pt-2">Seguinos en nuestras redes</h3>
+				<a href="https://facebook.com" target="_blank">
+					<img src="./../img/iconofacebook.png" alt="Icono Facebook"></a>
+				<a href="https://instagram.com" target="_blank">
+					<img src="./../img/iconoinstagram.png" alt="Icono Instagram"></a>
+				<a href="https://twitter.com" target="_blank">
+					<img src="./../img/iconotwitter.png" alt="Icono Twitter"></a>
+				<a href="https://api.whatsapp.com/send?phone=541156322591" target="_blank">
+					<img src="./../img/iconowhat.png" alt="Icono whatsapp"></a>
+		</footer>				
+		<!--termina footer-->				
 
 		<!--Script Aos-->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>

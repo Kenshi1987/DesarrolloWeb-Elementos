@@ -16,7 +16,7 @@ main {
 		overflow: hidden;
 		transition: all 0.5s;
 		box-sizing: border-box;
-		z-index: 100;
+		z-index: 10;
 		height:500px;
 		text-align: center;
 			&:hover {
@@ -130,7 +130,7 @@ main {
 			overflow: hidden;
 		}
 		.contenedor-texto{
-			width: 80%;
+			width: 100%;
 			height: auto;
 			overflow: hidden;
 				p{
@@ -139,14 +139,24 @@ main {
 		}
 
 		.boxImagenIndex{
-				height: auto;
-				width: 100%;
-				margin: 0;
-				padding:0;
-				border-radius: 30px;
+				height: 80%;
+				width: auto;
+				margin: 2px;
+				padding:2px;				
 			}
 	}
 
+	@media screen and(max-width: 425px) {
+		.boxImagenIndex{
+				height: 60%;
+				width: 99vw;
+				margin: 2px;
+				padding:2px;
+				border-radius:20px;
+		}
+	}
+
+	
 
 
 
